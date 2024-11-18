@@ -1,0 +1,1 @@
+web: gunicorn problem_generator.wsgi --bind 0.0.0.0:$PORT
