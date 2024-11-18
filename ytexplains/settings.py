@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-b8x7dpt8th7)!ag)ah$e7h9%(_c8xq+e=36=(&=3-_90n2p^i_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['quick-notes-tan.vercel.app', 'localhost', '127.0.0.1','.vercel.app']
 
 
 # Application definition
@@ -129,9 +129,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Add CORS settings
-CORS_ALLOW_ALL_ORIGINS = True  # For development only
-CORS_ALLOW_HEADERS = list(default_headers) + [
-    'content-type',
+CORS_ALLOWED_ORIGINS = [
+    "https://quick-notes-tan.vercel.app",
 ]
 
 if DEBUG:
