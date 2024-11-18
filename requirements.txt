@@ -1,0 +1,6 @@
+Django>=4.1.13
+django-cors-headers
+whitenoise
+google-generativeai
+youtube-transcript-api
+python-dotenv
